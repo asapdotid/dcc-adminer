@@ -1,5 +1,4 @@
-version: "3.7"
-
+---
 networks:
   proxy:
     driver: bridge
@@ -17,3 +16,19 @@ services:
     networks:
       - proxy
       - secure
+    command:
+      [
+        "php",
+        "-d",
+        "memory_limit=${ADMINER_MEMORY_LIMIT}",
+        "-d",
+        "upload_max_filesize=${ADMINER_UPLOAD_MAX_FILESIZE}",
+        "-d",
+        "post_max_size=${ADMINER_POST_MAX_SIZE}",
+        "-d",
+        "max_execution_time=${ADMINER_MAX_EXECUTION_TIME}",
+        "-S",
+        "[::]:8080",
+        "-t",
+        "/var/www/html",
+      ]
