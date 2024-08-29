@@ -43,6 +43,12 @@ make down
 make logs
 ```
 
+## Adminer URL address (default env `8080`)
+
+```bash
+http://localhost:8080
+```
+
 ## License
 
 MIT / BSD
