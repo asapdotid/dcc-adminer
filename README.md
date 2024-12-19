@@ -26,6 +26,16 @@ First of all:
 
 > After command `make set-env` can change value of env file on `src/.env`
 
+```bash
+# Adminer Port
+ADMINER_PORT=8080
+# Custom config (PHP)
+ADMINER_MEMORY_LIMIT=-1
+ADMINER_UPLOAD_MAX_FILESIZE=1G
+ADMINER_POST_MAX_SIZE=1G
+ADMINER_MAX_EXECUTION_TIME=0
+```
+
 Running command `make`:
 
 ```bash
