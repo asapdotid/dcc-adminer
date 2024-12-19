@@ -1,9 +1,11 @@
 ---
 networks:
   proxy:
+    name: proxy
     driver: bridge
     external: true
   secure:
+    name: proxy
     driver: bridge
     external: true
 
