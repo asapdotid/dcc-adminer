@@ -1,6 +1,6 @@
 # Container names
 ## must match the names used in the docker-composer.yml files
-DOCKER_SERVICE_NAME?=
+DOCKER_SERVICE_NAME:=adminer
 
 # FYI:
 # $(DOCKER_IMAGE_NAME)  ----------------------------------    adminer
