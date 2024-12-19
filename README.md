@@ -65,4 +65,4 @@ MIT / BSD
 
 ## Author Information
 
-This Code was created in 2023 by [Asapdotid](https://github.com/asapdotid).
+This Code was created in 2023 by [Asapdotid](https://github.com/asapdotid) 🚀
