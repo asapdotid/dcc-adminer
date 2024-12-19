@@ -1,7 +1,3 @@
-# Container names
-## must match the names used in the docker-composer.yml files
-DOCKER_SERVICE_NAME:=adminer
-
 # we need a couple of environment variables for docker-compose so we define a make-variable that we can
 # then reference later in the Makefile without having to repeat all the environment variables
 DOCKER_COMPOSE_COMMAND:= \
@@ -39,10 +35,6 @@ endif
 set-env: compose/.env ## Docker compose initial environment
 set-env:
 	@echo "Please update your src/.env file with your settings"
-
-.PHONY: del-env
-del-env: ## Remove the src/.env file for docker
-	@rm -f $(DOCKER_ENV_FILE)
 
 .PHONY: validate-variables
 validate-variables:
