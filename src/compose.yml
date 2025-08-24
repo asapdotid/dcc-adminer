@@ -1,11 +1,6 @@
 ---
 networks:
-  proxy:
-    name: proxy
-    driver: bridge
-    external: true
   secure:
-    name: proxy
     driver: bridge
     external: true
 
@@ -16,7 +11,6 @@ services:
     ports:
       - "${ADMINER_PORT}:8080"
     networks:
-      - proxy
       - secure
     command:
       [
