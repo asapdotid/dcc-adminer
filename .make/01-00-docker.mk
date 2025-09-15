@@ -31,9 +31,9 @@ endif
 
 ##@ [Docker: Compose commands]
 
-.PHONY: set-env
-set-env: compose/.env ## Docker compose initial environment
-set-env:
+.PHONY: env
+env: compose/.env ## Docker compose set environment
+env:
 	@echo "Please update your src/.env file with your settings"
 
 .PHONY: validate-variables
