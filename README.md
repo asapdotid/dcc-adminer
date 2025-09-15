@@ -18,13 +18,13 @@ make help
 First of all:
 
 -   Init setup env: `make init`
--   Init docker compose env: `make set-env`
+-   Init docker compose env: `make env`
 
 ## Custom environment file
 
 > After first command `make ini` do not change env file on `.make/.env`
 
-> After command `make set-env` can change value of env file on `src/.env`
+> After command `make env` can change value of env file on `src/.env`
 
 ```bash
 # Adminer Port
